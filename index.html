@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIMPREX SERVICE</title>
+  <meta name="theme-color" content="#007bff" />
+  <link rel="icon" href="favicon.gif" type="image/gif" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #f9fafc;
+      color: #222;
+      overflow-x: hidden;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #007bff, #040b1f);
+      padding: 80px 20px 100px;
+      border-bottom-left-radius: 50% 15%;
+      border-bottom-right-radius: 50% 15%;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: white;
+      border-top-left-radius: 50% 100%;
+      border-top-right-radius: 50% 100%;
+      z-index: 0;
+    }
+
+    .logo {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
+    }
+
+    .subtitulo {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e6f0ff;
+      background: rgba(255,255,255,0.08);
+      padding: 6px 12px;
+      border-radius: 999px;
+      display: inline-block;
+      margin-top: 6px;
+    }
+
+    main { padding: 20px; }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      animation: fadeIn 0.9s ease;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 10px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #444;
+      font-size: 15px;
+    }
+
+    .services {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .service-card {
+      background: #f4f8ff;
+      border-left: 5px solid #39850e;
+      padding: 14px;
+      border-radius: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0, 123, 255, 0.12);
+    }
+
+    .service-card strong {
+      font-size: 16px;
+      color: #0056b3;
+    }
+
+    /* ====== GIF ====== */
+    .gif-area {
+      display: flex;
+      justify-content: center;
+      margin-top: 18px;
+    }
+
+    .gif-area img {
+      width: 180px;
+      max-width: 100%;
+      border-radius: 14px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* ====== FORMULARIO ====== */
+    form label { display:block; margin-top:10px; font-weight:600; color:#333; }
+    input, textarea {
+      width:100%; padding:10px; border-radius:8px;
+      border:1px solid #e6e9ef; margin-top:6px; font-size:14px;
+      background: #fbfdff;
+    }
+
+    button {
+      margin-top:12px; width:100%; padding:12px;
+      border:none; border-radius:10px;
+      background:#007bff; color:white;
+      font-weight:700; font-size:16px;
+      box-shadow: 0 6px 16px rgba(0, 123, 255, 0.2);
+      transition: background 0.25s ease, transform 0.12s ease;
+    }
+
+    button:hover { background:#0056b3; transform: translateY(-2px); }
+
+    footer {
+      text-align:center;
+      color:#666;
+      font-size:14px;
+      margin:40px 0 20px;
+    }
+
+    @media (max-width:480px) {
+      header { padding: 60px 12px 80px; }
+      h1 { font-size: 24px; }
+      .logo img { width: 92px; height: 92px; }
+      .subtitulo { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo">
+      <img src="c:\Users\aleja\OneDrive\Documentos\xxxxxx\WhatsApp Image 2025-11-06 at 9.22.42 AM.jpeg" alt="Logo LIMPREX SERVICE">
+      <h1>LIMPREX SERVICE</h1>
+    <p class="subtitulo" style="background-color: rgba(89, 255, 24, 0.705); color: rgb(0, 0, 0); padding: 5px; border-radius: 5px;">
+  Servicios de limpieza en Quito
+</p>
+
+
+    </div>
+  </header>
+
+  <main>
+    <!-- SOBRE NOSOTROS -->
+    <section>
+      <h2>Sobre Nosotros</h2>
+      <p>
+      <strong>LIMPREX SERVICE</strong> nació en Quito como una idea para ingresar al mercado de limpieza, enfocada en el profesionalismo, la capacitación y la mejora continua. Ofrecemos un servicio confiable, moderno y de alta calidad, brindando a cada cliente un aspecto impecable y atención excepcional.
+      </p>
+    </section>
+
+<!-- NUESTROS SERVICIOS -->
+<section>
+  <h2>Nuestros Servicios</h2>
+  <div class="services">
+    <div class="service-card">
+      <strong>Limpieza Residencial</strong><br>
+      Casas, departamentos y condominios.<br>
+      💰 <em>Por contrato</em>
+    </div>
+
+    <div class="service-card">
+      <strong>Limpieza de Oficinas</strong><br>
+      Mantenimientos diarios o semanales.<br>
+      💰 <em>$10 por hora</em>
+    </div>
+
+    <div class="service-card">
+      <strong>Limpieza Profunda</strong><br>
+      Cocina, baños, vidrios y zonas difíciles.<br>
+      💰 <em>$12 por hora</em>
+    </div>
+
+    <div class="service-card">
+      <strong>Limpieza en Eventos</strong><br>
+      Antes, durante o después de celebraciones.<br>
+      💰 <em>4 horas por $35</em>
+    </div>
+
+    <div class="service-card">
+      <strong>Organización de Espacios</strong><br>
+      Orden y optimización de closets y bodegas.<br>
+      💰 <em>$10 por hora</em>
+    </div>
+  </div>
+</section>
+
+      <!-- GIF ANIMADO -->
+      <div class="gif-area">
+        <img src="c:\Users\aleja\OneDrive\Documentos\xxxxxx\Brigadas-de-aseo.gif" alt="Animación limpieza profesional">
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section>
+      <h2>Contáctanos</h2>
+      <form action="https://formsubmit.co/olimponex@gmail.com" method="POST">
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+        <label>Teléfono</label>
+        <input type="tel" name="telefono" placeholder="+593 9 8765 4321" required>
+
+        <label>Servicio que necesitas</label>
+        <input type="text" name="servicio" placeholder="Ejemplo: Limpieza profunda">
+
+        <label>Mensaje o dirección</label>
+        <textarea name="mensaje" rows="3" placeholder="Detalles del servicio o dirección"></textarea>
+
+        <button type="submit">Enviar solicitud</button>
+
+        <input type="hidden" name="_next" value="https://tu-sitio.github.io/limprexservice/gracias.html">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+
+      <div style="margin-top:15px; text-align:center;">
+        <a href="https://wa.me/593939685204" target="_blank" style="color:#007bff; font-weight:600;">
+          💬 Enviar mensaje por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> LIMPREX SERVICE — Quito, Ecuador  
+    <br>
+    📞 <a href="tel:+593939685204" style="color:#007bff;">+593 93 968 5204</a> · 
+    💬 <a href="https://wa.me/593939685204" target="_blank" style="color:#25D366;">WhatsApp</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
